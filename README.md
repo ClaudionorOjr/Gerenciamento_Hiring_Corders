@@ -25,4 +25,4 @@ Pequena plataforma para o cadastramento de clientes e produtos.
 
 Aceito dicas e sugestões para a melhoria do projeto.  
   
-Pode acessar aqui: [Gerenciamento](https://el-eletronicos.netlify.app/)
+Pode acessar aqui: [Gerenciamento](https://gerenciamento-cadastros.netlify.app/)

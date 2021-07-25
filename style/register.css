@@ -1,0 +1,137 @@
+@import url(index.css);
+
+form {
+  background: #f0f0f0;
+  box-shadow: 1px 1px 6px #cccccc,
+            -1px -1px 6px #ffffff;
+
+  width: 100%;
+  max-width: 500px;
+
+  margin: 32px auto;
+  padding: 32px 64px;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 1rem;
+}
+
+form h2 {
+  margin-bottom: 32px;
+  font-size: 2rem;
+
+  color:var(--grey);
+}
+
+
+div.input {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+input {
+  /* reset appeareance */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  
+  /* box */
+  width: 100%;
+  
+  padding: 16px 0;
+  
+  border:none;
+  border-bottom: 2px solid var(--primary-color);
+  
+  background-color: transparent;
+  
+  outline: none;
+  
+  /* text */
+  font-size: 1.6em;
+  
+}
+
+button {
+  margin-top: 16px;
+  padding: 1rem;
+  
+  width: 10rem;
+  
+  border: none;
+  border-radius: 0.5rem;
+  
+  font-weight: bolder;
+  
+  background-color: var(--primary-color);
+}
+
+input ~ label {
+  position: absolute;
+  top: 16px;
+  left: 0rem;
+  
+  font-size: 1.4rem;
+  font-weight: bold;
+  
+  color:var(--grey);
+  
+  transition: .4s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+  transform: translateY(-24px);
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+}
+
+h3 {
+  margin: 2rem 0;
+  font-size: 1.6rem;
+
+  color: var(--grey);
+}
+
+.address {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.address .input {
+  margin-right: 2rem;
+  width: 35rem;
+}
+
+.address .input:nth-child(2), .address .input:nth-child(4) {
+  width: 10rem;
+}
+
+.back {
+  display: flex;
+  position: absolute;
+
+  width: 3rem;
+  height: 3rem;
+
+  background: #f0f0f0;
+  box-shadow: 1px 1px 6px #cccccc,
+            -1px -1px 6px #ffffff;
+  
+  padding: 2rem;
+  border-radius: 999px;
+
+  top: 1rem;
+  left: 1rem;
+}
+
+.back img {
+  animation: is-bouncing 0.5s ease alternate infinite;
+}
+
+@keyframes is-bouncing {
+  to {
+    transform: translateX(5px);
+  }
+}
